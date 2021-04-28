@@ -1,0 +1,95 @@
+.search_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.search_form input {
+    background: #F9F9F9;
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-bottom: 1px solid #262626;
+    padding: 17px 56px;
+    font-size: 16px;
+    position: relative;
+}
+
+.search_form::after {
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    width: 17px;
+    height: 17px;
+    background: url("../../assets/images/icon.svg");
+    content: '';
+}
+
+.search_form input:focus {
+    outline: none;
+}
+
+
+.users_list {
+    border-radius: 0px 0px 8px 8px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100% + 17px);
+    height: 222px;
+    padding-top: 12px;
+}
+
+.loader {
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: calc(50% - 28px);
+    left: calc(50% - 38px);
+    animation: spin 1s linear infinite;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.user {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 4px 16px;
+    cursor: pointer;
+    /* transition: background .2s; */
+}
+
+.selected {
+    background: #F2F2F2;
+}
+
+.user_photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px #E5E5E6;
+}
+
+.user_name {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-flow: column;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
