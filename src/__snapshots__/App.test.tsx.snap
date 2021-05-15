@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="form_container"
+    >
+      <div
+        class="search_form"
+        data-testid="form_container"
+      >
+        <input
+          data-testid="input"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
